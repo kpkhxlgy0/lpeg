@@ -3,6 +3,7 @@ if [ "-$CMAKE_BUILD_TYPE" = "-" ]; then
     CMAKE_BUILD_TYPE=Release
 fi
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd $DIR
 
 DIR_ALL=$DIR/build_all
 rm -rf $DIR_ALL
